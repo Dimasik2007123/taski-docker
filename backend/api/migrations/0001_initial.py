@@ -21,7 +21,10 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
-                ("title", models.CharField(max_length=120, verbose_name="Заголовок")),
+                (
+                    "title",
+                    models.CharField(max_length=120, verbose_name="Заголовок"),
+                ),
                 ("description", models.TextField()),
                 ("completed", models.BooleanField(default=False)),
             ],
